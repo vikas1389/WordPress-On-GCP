@@ -12,9 +12,10 @@
    ```gcloud container clusters create wordpress --num-nodes=1```
    
 5. Configures kubectl and test it
-   ```gcloud container clusters get-credentials wordpress
-   kubectl get nodes```
-   
+   ```
+   gcloud container clusters get-credentials wordpress
+   kubectl get nodes
+   ```
 6. Create a deployment for wordpress
    ```kubectl apply -f WordPress-Deployment.yaml```
    
@@ -43,14 +44,16 @@
 ```
    
 10. Delete GKE cluster once demoed
-   ```gcloud container clusters delete wordpress
+   ```
+   gcloud container clusters delete wordpress
    
    enlightensyou@cloudshell:~ (future-champion-284923)$ gcloud container clusters delete wordpress
 	The following clusters will be deleted.
 	 - [wordpress] in [us-west1-a]
 	Do you want to continue (Y/n)?  Y
 	Deleting cluster wordpress...done.
-	Deleted [https://container.googleapis.com/v1/projects/future-champion-284923/zones/us-west1-a/clusters/wordpress].```
+	Deleted [https://container.googleapis.com/v1/projects/future-champion-284923/zones/us-west1-a/clusters/wordpress].
+   ```
    
 
 ## References:
